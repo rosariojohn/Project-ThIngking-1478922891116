@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: Project ThIngking
+  host: HomeAssistant
+  disk_quota: 1024M
+  services:
+  - HomeAssistant-cloudantNoSQLDB
+  - Text to Speech-ProjectThIngking
+  - Natural Language Classifier-ProjectThIngking
